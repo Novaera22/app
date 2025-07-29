@@ -1,14 +1,346 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Império Gourmet - Confeitaria Artesanal</title>
-    <script type="module" crossorigin src="/assets/index-DL9uI_53.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-C0LG1Wqb.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="logo.jpg" alt="Império Gourmet" class="logo-img">
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link">Início</a>
+                    <a href="#sobre" class="nav-link">Sobre</a>
+                    <a href="#produtos" class="nav-link">Produtos</a>
+                    <a href="#contato" class="nav-link">Contato</a>
+                </nav>
+                
+                <!-- WhatsApp Button -->
+                <a href="https://wa.me/5511984608021" target="_blank" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="navMobile">
+                <a href="#home" class="nav-link-mobile">Início</a>
+                <a href="#sobre" class="nav-link-mobile">Sobre</a>
+                <a href="#produtos" class="nav-link-mobile">Produtos</a>
+                <a href="#contato" class="nav-link-mobile">Contato</a>
+                <a href="https://wa.me/5511984608021" target="_blank" class="whatsapp-btn-mobile">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-heart"></i>
+                    Feito com amor e dedicação
+                </div>
+                
+                <h1 class="hero-title">
+                    Bem-vindos ao
+                    <span class="hero-title-accent">Império Gourmet</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Doces artesanais que despertam sorrisos e criam memórias especiais. 
+                    Cada receita é preparada com ingredientes selecionados e muito carinho 
+                    pela confeiteira Shirley Laeghy Issa.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#produtos" class="btn btn-primary">
+                        <i class="fas fa-birthday-cake"></i>
+                        Ver Produtos
+                    </a>
+                    <a href="https://wa.me/5511984608021" target="_blank" class="btn btn-outline">
+                        <i class="fab fa-whatsapp"></i>
+                        Fazer Pedido
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre a Confeiteira</h2>
+                <p class="section-subtitle">
+                    Conheça a história por trás dos sabores únicos do Império Gourmet
+                </p>
+            </div>
+            
+            <div class="sobre-content">
+                <div class="sobre-main">
+                    <div class="sobre-card">
+                        <div class="sobre-header">
+                            <i class="fas fa-user-chef"></i>
+                            <h3>Shirley Laeghy Issa</h3>
+                        </div>
+                        
+                        <p class="sobre-text">
+                            Com 46 anos de idade e uma paixão que começou na infância, Shirley 
+                            transformou seu amor pela confeitaria em uma arte. Cada doce é 
+                            preparado com técnicas refinadas e ingredientes premium, 
+                            garantindo sabores únicos e apresentação impecável.
+                        </p>
+                        
+                        <div class="sobre-features">
+                            <div class="feature">
+                                <i class="fas fa-star"></i>
+                                <span>Mais de 20 anos de experiência</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-heart"></i>
+                                <span>Receitas familiares exclusivas</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-birthday-cake"></i>
+                                <span>Ingredientes selecionados</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sobre-cards">
+                    <div class="info-card">
+                        <h4>Nossa Missão</h4>
+                        <p>Criar momentos especiais através de doces artesanais que 
+                        despertam emoções e fortalecem laços familiares.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h4>Nossos Valores</h4>
+                        <p>Qualidade, tradição e inovação se encontram em cada receita, 
+                        sempre priorizando a satisfação e felicidade dos nossos clientes.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h4>Diferencial</h4>
+                        <p>Atendimento personalizado, receitas exclusivas e a garantia 
+                        de produtos sempre frescos e saborosos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos Section -->
+    <section class="produtos" id="produtos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Produtos</h2>
+                <p class="section-subtitle">
+                    Uma seleção especial de doces e salgados artesanais para todas as ocasiões
+                </p>
+            </div>
+            
+            <div class="produtos-grid">
+                <div class="produto-card">
+                    <div class="produto-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3 class="produto-title">Bolos Artesanais</h3>
+                    <ul class="produto-list">
+                        <li>Bolo de Chocolate Belga</li>
+                        <li>Bolo Red Velvet</li>
+                        <li>Bolo de Cenoura com Brigadeiro</li>
+                        <li>Bolo de Limão Siciliano</li>
+                    </ul>
+                </div>
+                
+                <div class="produto-card">
+                    <div class="produto-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="produto-title">Docinhos Finos</h3>
+                    <ul class="produto-list">
+                        <li>Brigadeiros Gourmet</li>
+                        <li>Beijinhos de Coco</li>
+                        <li>Cajuzinhos Premium</li>
+                        <li>Trufas Artesanais</li>
+                    </ul>
+                </div>
+                
+                <div class="produto-card">
+                    <div class="produto-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="produto-title">Tortas Especiais</h3>
+                    <ul class="produto-list">
+                        <li>Torta de Morango</li>
+                        <li>Torta de Chocolate</li>
+                        <li>Torta de Limão</li>
+                        <li>Torta de Frutas Vermelhas</li>
+                    </ul>
+                </div>
+                
+                <div class="produto-card">
+                    <div class="produto-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3 class="produto-title">Salgados Gourmet</h3>
+                    <ul class="produto-list">
+                        <li>Coxinhas Especiais</li>
+                        <li>Empadas Artesanais</li>
+                        <li>Quiches Variados</li>
+                        <li>Canapés Finos</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="encomendas-especiais">
+                <div class="encomendas-card">
+                    <h3>Encomendas Especiais</h3>
+                    <p>
+                        Criamos doces personalizados para casamentos, aniversários, 
+                        eventos corporativos e outras ocasiões especiais. Entre em contato 
+                        para discutir suas necessidades específicas.
+                    </p>
+                    <a href="https://wa.me/5511984608021" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i>
+                        Solicitar Orçamento
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section class="contato" id="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">
+                    Estamos prontos para tornar sua ocasião especial ainda mais doce
+                </p>
+            </div>
+            
+            <div class="contato-content">
+                <div class="contato-info">
+                    <div class="contato-card">
+                        <h3>Informações de Contato</h3>
+                        
+                        <div class="contato-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <p>(11) 98460-8021</p>
+                                <a href="https://wa.me/5511984608021" target="_blank" class="link-whatsapp">
+                                    Enviar mensagem
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contato-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Horário de Atendimento</strong>
+                                <p>Segunda a Sexta: 8h às 18h</p>
+                                <p>Sábado: 8h às 14h</p>
+                                <p>Domingo: Sob consulta</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contato-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Atendimento</strong>
+                                <p>Atendemos toda a região metropolitana de São Paulo</p>
+                                <small>Entrega e retirada sob consulta</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pedido-info">
+                    <div class="pedido-card">
+                        <h3>Faça seu Pedido</h3>
+                        
+                        <p>
+                            Para fazer seu pedido ou solicitar um orçamento personalizado, 
+                            entre em contato conosco pelo WhatsApp. Informe:
+                        </p>
+                        
+                        <ul class="pedido-list">
+                            <li>Tipo de doce ou produto desejado</li>
+                            <li>Quantidade necessária</li>
+                            <li>Data do evento ou entrega</li>
+                            <li>Local de entrega ou retirada</li>
+                        </ul>
+                        
+                        <a href="https://wa.me/5511984608021?text=Olá! Gostaria de fazer um pedido no Império Gourmet." target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            Iniciar Conversa no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo.jpg" alt="Império Gourmet" class="footer-logo">
+                    <p>
+                        Doces artesanais que despertam sorrisos e criam memórias especiais. 
+                        Feito com amor pela confeiteira Shirley Laeghy Issa.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Shirley Laeghy Issa</p>
+                    <p>WhatsApp: (11) 98460-8021</p>
+                    <p>São Paulo - SP</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Horários</h4>
+                    <p>Segunda a Sexta: 8h às 18h</p>
+                    <p>Sábado: 8h às 14h</p>
+                    <p>Domingo: Sob consulta</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Império Gourmet. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511984608021" target="_blank" class="whatsapp-float" id="whatsappFloat">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
 </html>
